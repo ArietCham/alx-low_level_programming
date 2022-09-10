@@ -3,8 +3,10 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Print if the number is positive, zero or negative
  *
+ * Description: Using the main function
+ * This program prints "Programming is positive, zero or negative"
  * Return: Always 0 (Success/correct)
  */
 int main(void)
@@ -16,19 +18,19 @@ srand(time(0));
 n = rand() - RAND_MAX / 2;
 l=n % 10
 
-if (n % 10 > 5)
+if (1 > 5)
 {
-printf("Last digit of %i is %i and is greater than 5/n", n, n % 10);
+printf("Last digit of %d is %d and is greater than 5/n", n, 1);
 }
 
-else if (n % 10 == 0)
+else if (1 == 0)
 {
-printf("Last digit of %i and is 0\n", n, n % 10);
+printf("Last digit of %d is %d and is 0\n", n, 1);
 }
 
 else
 {
-printf("Last digit of %i is %i and is less than 0 and not 0\n", n, n % 10);
+printf("Last digit of %d is %d and is less than 6 and not 0\n", n, 1);
 }
 
 return(0);
