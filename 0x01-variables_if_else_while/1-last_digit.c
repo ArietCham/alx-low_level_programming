@@ -1,13 +1,10 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
-
 /**
- * main - Print if the number is positive, zero or negative
+ * main - Entry point
  *
- * Description: Using the main function
- * This program prints "Programming is positive, zero or negative"
- * Return: Always 0 (Success/correct)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -33,5 +30,6 @@ else if (L < 6)
 {
 printf("%s %d is %d and is less than 6 and not 0\n", str, n, L);
 }
+
 return (0);
 }
