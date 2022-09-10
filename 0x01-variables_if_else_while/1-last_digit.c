@@ -9,7 +9,7 @@
  * This program prints "Programming is positive, zero or negative"
  * Return: Always 0 (Success/correct)
  */
-int main_attribute_:(void)
+int main(void)
 {
 int n;
 int l;
