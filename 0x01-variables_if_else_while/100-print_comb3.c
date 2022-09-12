@@ -6,7 +6,6 @@
  *
  * Return: Always 0 (Success)
  */
-void trim(char *s);
 int main(void)
 {
 int i, j;
@@ -28,9 +27,4 @@ putchar(' ');
 }
 putchar('\n');
 return (0);
-{
-void trim(char *s)
-{
-int i = strlen(s) - 1;
-while (i > 0)
 }
