@@ -4,7 +4,7 @@
  * main - Entry point
  *
  * codes for printing all possible combination of two d/t digits
- * in assending order and separated by a comma followed by a space.
+   in assending order and separated by a comma followed by a space.
  *
  * Return: Always 0 (Success)
  */
@@ -12,7 +12,6 @@ int main(void)
 {
 int n1 = 0, n2;
 while (n1 <= 9)
-{
 n2 = 0;
 while(n2 <= 9)
 {
