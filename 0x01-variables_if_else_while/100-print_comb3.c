@@ -1,20 +1,21 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /**
  * main - Entry point
+ *
+ * codes for printing all possible combination of two d/t digits
+ * in assending order and separated by a comma followed by a space.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-int d;
+int digit1, digit2;
 
-for (d = 0; d < 100; d++)
+for (digit1 = 0; digit1 < 9; digit1++)
 {
-putchar((d / 10) + '0');
-putchar((d % 10) + '0');
-if (d != 99)
+putchar((digit1 % 10) + '0');
+putchar((digit2 % 10) + '0');
+if (digit1 == 8 && digit2 == 9)
 {
 putchar(',');
 putchar(' ');
