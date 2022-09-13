@@ -1,1 +1,1 @@
-My first readme
+a function that checks for lowercase character
