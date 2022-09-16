@@ -1,56 +1,41 @@
-#include <stdio.h>                                                                                                         
+#include <stdio.h>
 
-                                                                                                                          
-/**                                                                                                                        
+/**
+ * main - program that prints either number
+ * or fizz or buzz or FizzBuzz
  *
- *  * main - prints the numbers from 1-100 but for multiples of three                                                         
- *
- *  * print fizz instead of the number and for the multiples of five print Buzz.                                              
- *
- *  * For numbers which are multiples of both three and five print FizzBuzz.                                                  
- *
- *  * Return: Always 0 (success)                                                                                              
- *
- *  */                                                                                                                        
+ * Return: returns 0
+ */
 
-                                                                                                                           
+int main(void)
+{
+int num = 1;
 
-int main(void)                                                                                                             
-
-{                                                                                                                          
-
-	int i;                                                                                                                     
-
-	                                                                                                                           
-
-	for (i = 1; i <= 100; i++)                                                                                                 
-
-	{                                                                                                                          
-
-		if (i == 100)                                                                                                              
-
-			printf("Buzz");                                                                                                            
-
-		if (((i % 3) == 0) && ((i % 5) == 0))                                                                                      
-
-			printf("FizzBuzz");                                                                                                        
-
-		else if ((i % 3) == 0)                                                                                                     
-
-			printf("Fizz ");                                                                                                           
-
-		else if ((i % 5) == 0)                                                                                                     
-
-			printf("Buzz ");                                                                                                           
-
-		else                                                                                                                       
-
-			printf("%d ", i);                                                                                                          
-
-	}                                                                                                                          
-
-	printf("\n");                                                                                                              
-
-	return (0);                                                                                                                
-
-}           
+while (num++ < 100)
+{
+if ((num % 3 == 0) && (num % 5 == 0))
+{
+printf("FizzBuzz ");
+}
+else if ((num % 3) == 0)
+{
+printf("Fizz ");
+}
+else if ((num % 5) == 0)
+{
+if (num != 100)
+{
+printf("Buzz ");
+}
+else
+{
+printf("%d", num);
+}
+else
+{
+printf("\n");
+return (0);
+}
+}
+}
+}
