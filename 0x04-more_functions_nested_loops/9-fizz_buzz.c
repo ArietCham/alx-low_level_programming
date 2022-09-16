@@ -1,17 +1,19 @@
 #include <stdio.h>
+
 /**
  * main - prints the numbers from 1-100 but multiples of three,fizz
  *        is printed in place of the no, buzz in place of multiples
  *        of 5 and FizzBuzz for both five and three.
- *
- * Return: Always 0
+ * Return: Always 0 (success)
  */
+
 int main(void)
 {
 int n;
+
 for (n = 1; n <= 100; n++)
 {
-if (n == 0)
+if (n == 100)
 printf("Buzz");	
 if (((n % 3) == 0) && ((n % 5) == 0))
 printf("FizzBuzz");
