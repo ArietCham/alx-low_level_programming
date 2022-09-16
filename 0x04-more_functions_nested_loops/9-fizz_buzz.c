@@ -4,7 +4,7 @@
  *        is printed in place of the no, buzz in place of multiples
  *        of 5 and FizzBuzz for both five and three.
  *
- * Return: Always 0;
+ * Return: Always 0
  */
 int main(void)
 {
