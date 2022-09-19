@@ -8,11 +8,25 @@
 
 void print_rev(char *s)
 {
-int i, n;
-s = "hello";
-n = strlen(s);
-for (i = n-1; i >= 0; i--)
+int i, c, k;
+char *a, aux;
+
+a = s;
+
+while (s[c] != '\0')
 {
-_putchar(i);
+c++;
+}
+
+for (k = 1; k < c; k++)
+{
+a++;
+}
+for (i = 0; i < (c / 2); i++)
+{	
+aux = s[i];
+s[i] = *a;
+*a = aux;
+a--;
 }
 }
