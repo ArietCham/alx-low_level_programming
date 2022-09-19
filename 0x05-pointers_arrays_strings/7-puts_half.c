@@ -1,5 +1,5 @@
+#include <stdio.h>
 #include "main.h"
-int function(_putchar(*str), _putchar('\n'));
 
 /**
  * puts_half - Prints half of a string
