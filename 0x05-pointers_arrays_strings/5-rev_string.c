@@ -13,6 +13,6 @@ s = "hello";
 n = strlen(s);
 for (i = n-1; i >= 0; i--)
 {
-putchar(i);
+_putchar(i);
 }
 }
