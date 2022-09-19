@@ -1,7 +1,6 @@
 #include "main.h"
-
 /**
- * rev_string - printing a string in reverse
+ * rev_string - prints a reverse string
  * @s: a pointer to an int that will be changed
  *
  * Return: void
@@ -23,7 +22,7 @@ count = length;
 start_c = s;
 end_c = s;
 
-for (i = 0; i < count - i; i++)
+for (i = 0; i < count - 1; i++)
 {
 end_c++;
 }
