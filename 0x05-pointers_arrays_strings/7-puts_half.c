@@ -1,5 +1,6 @@
 #include "main.h"
-int function(_putchar;)
+int function(_putchar);
+
 /**
  * puts_half - Prints half of a string
  * @str: input
