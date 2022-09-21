@@ -8,18 +8,20 @@
  *
  * Return: returns pointer to @dest
  */
-
 char *_strcat(char *dest, char *src)
 {
 
-int c, c2;
-c = 0;
+        int len = 0, i;
 /*find the size of dest array*/
-while (dest[c])
-c++;
+        while (dest[len])
+            len++;
 /* iterate through each src array value without the null byte*/
-for (c2 = 0; src[c2]; c2++)
+        for (i = 0; src[i] != '\0'; i++)
+{
 /*append src[c2] to dest[c] while overwritting the null byte in dest*/	
-dest[c++] = src[c2];
-return (dest);
+             dest[len] = src[i];
+             len += 1;
+}
+        dest[len] = '\0';
+        return (dest);
 }
