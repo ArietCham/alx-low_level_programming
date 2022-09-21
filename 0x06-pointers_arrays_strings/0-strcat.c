@@ -5,7 +5,7 @@
  * @src: first string to be concatenated to dset
  * Return: pointer to the resulting string dest
  */
-char *_strcat(char *dest, char *src)
+char *_strcat(char *dest, char *src);
 {
 int x, y;
 
