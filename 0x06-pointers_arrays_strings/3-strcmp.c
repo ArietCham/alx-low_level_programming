@@ -5,39 +5,19 @@
  * @s1: The first string
  * @s2: The second string
  *
- * Return: int value
+ * Return: Always 0
  */
 int _strcmp(char *s1, char *s2)
 {
-int a = 0, b = 0, c = 0, r = 0, lim;
+int i = 0;
 
-while (s1[a])
+while (s1[i] != '\0' && s2[i] != '\0')
 {
-a++;
+if (s1[i] != s2[i]) 
+return (s1[i] - s2[i]);
+i++;
 }
-
-while (s2[b])
-{
-b++;
-}
-
-if (a <= b)
-{
-lim = a;
-}
-else 
-lim = b;
-while (c <= lim)
-{
-if (s1[c] == s2[c])
-{
-c++;
-continue;
-}
-else
-{
-r = s1[c] - s2[c];
-break;
-}
-c++;
+if (s1[i] == s2[i])
+return (0);
+return (s1[i] - s2[i]);
 }
