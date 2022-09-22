@@ -3,35 +3,17 @@
  * _strcmpm- function which compare two strings
  * @s1: first string
  * @s2: second string
- * Return:
- *           returns zero if s1 == s2
- *           returns negative number if s1 < s2
- *           returns positive number if s1 > s2
+ * Return: negative if s1 < s2; 0 if equal and positive if s1 > s2
  */
 int _strcmp(char *s1, char *s2)
 {
-int i = 0, diff = 0;
-while (1)
+int x;
+
+for (x = 0; s1[x] != '\0' || s2[x] != '\0'; x++)
+
 {
-if (s1[i] == '\0' && s2[i] == '\0')
-break;
-else if (s1[i] == '\0')
-{
-diff = s2[i];
-break;
+if (s1[x] != s2[x])
+return (s1[x] - s2[x]);	
 }
-else if (s2[i] == '\0')
-{
-diff = s1[i];
-break;
-}
-else if (s1[i] != s2[i])
-{
-diff = s1[i] - s2[i];
-break;
-}
-else
-i++;
-}
-return (diff);
+return (0);
 }
