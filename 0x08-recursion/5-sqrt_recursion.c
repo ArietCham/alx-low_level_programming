@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * _evaluate - evaluate function sqrt
+ * _sqrt_recursion - evaluate function sqrt
  * @n: integer
  * @x: integer
  * Return: evaluate sqrt
  */
-int _evaluate(int n, int x)
+int _sqrt_recursion(int n)
 {
 if (n == 1 || n == 0)
 return (0);
 
 else if (n * n < x)
-return (_evaluate(n + 1, x));
+return (_sqrt(n + 1, x));
 
 else if (n * n == x)
 return (n);
