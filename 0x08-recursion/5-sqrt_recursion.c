@@ -12,7 +12,7 @@ if (n == 1 || n == 0)
 return (0);
 
 else if (n * n < x)
-return (_evaluate(i + 1, n));
+return (_evaluate(n + 1, x));
 
 else if (n * n == x)
 return (n);
