@@ -17,7 +17,7 @@ return (0);
 }
 else
 {
-return helperFunction(num, i + 1));
+return helperFunction(num, i + 1);
 }
 }
 else
