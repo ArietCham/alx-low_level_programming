@@ -32,7 +32,7 @@ return (1);
  *
  * Return: 1 if n is prime, 0 otherwise
  */
-int is_prime(int n)
+int is_prime_number(int n)
 {
 if (n <= 1)
 {
