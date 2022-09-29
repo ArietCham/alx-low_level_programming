@@ -37,7 +37,7 @@ return (0);
 
 /**
  * is_palindrome - palindrome
- * @a: pointer to string
+ * @s: pointer to string
  * Return: recursion
  */
 
