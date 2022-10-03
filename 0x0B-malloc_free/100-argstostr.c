@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * argstostr - a function that concatenates all the 
- * arguments of your program
+ * argstostr - a function that concatenates all the arguments of your program
  * @ac: count of args passed to the function
  * @av: array of arguments
  *
@@ -11,7 +10,7 @@
 
 char *argstostr(int ac, char **av)
 {
-char *str;	
+char *str;
 int count = 0, a = 0, b = 0, c = 0;
 
 if (ac == 0 || av == NULL)
