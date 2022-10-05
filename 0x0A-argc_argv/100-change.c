@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- * main - This is a function to print its name
- * @argc: argc parameter
- * @argv: an array to command listed
- * return: 0 for success else 1
+ * main - Prints coins left
+ * @argc: argc parameter entry
+ * @argv: One number of argument
+ * return: 0 on one number of argument
  */
 int main(int argc, char *argv[])
 {
@@ -17,7 +17,7 @@ printf("Error\n");
 return (1);
 }
 c = atoi(argv[1]);
-if (a < 0)
+if (c < 0)
 {
 printf("0\n");
 return (0);
