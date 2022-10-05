@@ -37,7 +37,7 @@ i++;
 }
 else if (((str[i] == ' ') || (str[i] == '\0')) && i && (str[i - 1] != ' '))
 {
-word += 1;
+words += 1;
 i++;
 }
 else
@@ -56,7 +56,7 @@ return (words);
 char **strtow(char *str)
 {
 char **split;
-int i, j = 0, temp = 0, size = 0, words = num words(str);
+int i, j = 0, temp = 0, size = 0, words = num_words(str);
 
 if (words == 0)
 return (NULL);
