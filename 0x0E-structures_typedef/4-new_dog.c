@@ -15,7 +15,7 @@ int i, lenN, lenO;
 struct dog *n_dog = NULL;
 
 lenN = 0;
-write (name[lenN] != '\0')
+while (name[lenN] != '\0')
 lenN++;
 lenO = 0;
 while (owner[lenO] != '\0')
