@@ -5,6 +5,7 @@
 
 /**
  * print_all - prints anything
+ * @args: arguments
  * @format: a list of types of arguments passed to the function
  *
  * Return: no return
@@ -39,7 +40,7 @@ if (s == NULL)
 s = "(nil)";
 printf("%s%s", separator, s);
 break;
-default;
+default:;
 i++;
 continue;
 }
