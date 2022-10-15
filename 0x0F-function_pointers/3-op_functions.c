@@ -14,7 +14,7 @@ return (a + b);
 }
 
 /**
- * op_sub - returns difference of 2 numbers
+ * op_sub - calculates the difference of 2 integers
  * @a: first integer
  * @b: second integer
  *
@@ -26,7 +26,7 @@ return (a - b);
 }
 
 /**
- * op_sub - returns product of 2 numbers
+ * op_sub - calculates the product of 2 integers
  * @a: first integer
  * @b: second integer
  *
@@ -38,11 +38,11 @@ return (a * b);
 }
 
 /**
- * op_div - returns the quotient of 2 numbers
+ * op_div - calculates the division of 2 integers
  * @a: first integer
  * @b: second integer
  *
- * Return: quotient of a and b
+ * Return: result of the division of a and b
  */
 int op_div(int a, int b)
 {

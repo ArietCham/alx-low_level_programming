@@ -27,7 +27,7 @@ printf("Error\n");
 exit(2);
 }
 
-arr = (char *)main;
+arr = (int *)main;
 
 for (i = 0; i < bytes; i++)
 {
